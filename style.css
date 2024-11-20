@@ -1,0 +1,253 @@
+body {
+  overflow-x: hidden;
+}
+
+.navcss {
+  background-color: rgb(255, 248, 0);
+}
+
+.imgheader {
+  height: 50px;
+}
+
+.maincol {
+  height: auto;
+  background-color: rgb(6, 68, 105);
+}
+
+.li_header {
+  color: rgb(232, 232, 232);
+  font-weight: bold;
+}
+.li_header:hover {
+  padding: 5px;
+  background-color: rgb(6, 68, 105);
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.h2_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2_main {
+  font-size: 40px;
+  color: rgb(232, 232, 232);
+  margin-left: 60px;
+}
+
+.colpal {
+  padding: 15px 30px;
+  background-color: rgb(6, 68, 105);
+}
+
+.itemcarrusel {
+  height: auto;
+}
+
+.fila_tienda {
+  text-decoration: none;
+  background-color: rgb(214, 25, 25);
+}
+
+.to_shop {
+  height: 350px;
+  background-color: rgb(214, 25, 25);
+  text-align: center;
+  text-decoration: none;
+}
+.to_shop:hover {
+  border: 3px solid black;
+  border-radius: 100px;
+}
+
+.text_to_shop {
+  margin-bottom: 10px;
+}
+
+.a_to_shop {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img_main {
+  width: 90%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px black;
+}
+
+.qs_main {
+  height: 100%;
+  background-image: url(img/fondo_qs.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+.title_qs {
+  font-size: 100px;
+  color: rgb(232, 232, 232);
+  margin-bottom: 20px;
+}
+
+.p_qs {
+  width: 100%;
+  text-align: center;
+  color: rgb(232, 232, 232);
+  font-size: 20px;
+}
+
+.footer_row_redes {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  height: auto;
+  background-color: red;
+  text-align: center;
+  padding: 15px;
+}
+
+.h4_footer {
+  text-align: center;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0px 0px 8px yellow;
+}
+
+.img_footer {
+  width: 50px;
+  height: 50px;
+}
+
+.a_to_footer {
+  text-decoration: none;
+  color: black;
+}
+
+.main_to,
+.main_tienda,
+.titulo_tienda {
+  background-color: rgb(6, 68, 105);
+  height: auto;
+}
+
+.titulo_tienda_producto {
+  color: rgb(232, 232, 232);
+  font-size: 35px;
+}
+
+.producto_tienda {
+  padding: 20px;
+  text-align: center;
+}
+
+.hover_to:hover {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.img_tienda {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.producto_to {
+  color: rgb(232, 232, 232);
+}
+
+.nombre_producto {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.precio_producto {
+  text-align: right;
+  margin-right: 65px;
+}
+
+.no_subrayado {
+  text-decoration: none;
+}
+
+.productos {
+  background-color: rgb(6, 68, 105);
+  padding: 20px 10px;
+  height: auto;
+}
+
+.producto_img {
+  width: 100%;
+}
+
+.nombre_prod {
+  color: rgb(232, 232, 232);
+  text-align: left;
+  text-shadow: 0 0 15px rgb(255, 248, 0);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.precio_prod {
+  color: rgb(232, 232, 232);
+  text-align: left;
+  font-size: 60px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.descripcion_prod {
+  text-align: left;
+  color: rgb(232, 232, 232);
+  font-size: 20px;
+  padding-right: 75px;
+}
+
+.titulo_input_prod {
+  color: rgb(232, 232, 232);
+  font-size: medium;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputs_prd {
+  margin-top: 200px;
+  width: 95%;
+}
+
+.inputs_prod {
+  height: 20px;
+  border-radius: 20px;
+}
+
+.boton_prod {
+  height: 50%;
+  width: 30%;
+  margin: 30px 0px;
+}
+
+@media (max-width: 767px) {
+  .img_main {
+    width: 300px;
+  }
+  .nombre_prod {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 930px) {
+  .p_qs {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

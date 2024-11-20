@@ -1,0 +1,280 @@
+body {
+    overflow-x: hidden;
+}
+
+
+// Variables
+$header-bg-color: rgb(255, 248, 0);
+$main-bg-color: rgb(6, 68, 105);
+$bg-tres-color: rgb(214, 25, 25);
+$text-color: rgb(232, 232, 232);
+$bg-color: #0f0a;
+
+// Mixins
+@mixin hover-effect($bg-color, $border-radius: 15px) {
+    &:hover {
+        padding: 5px;
+        background-color: $bg-color;
+        border-radius: $border-radius;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+}
+
+@mixin responsive-img($width: 100%, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+// Header
+.navcss {
+    background-color: $header-bg-color;
+}
+
+.imgheader {
+    height: 50px;
+}
+
+.maincol {
+    height: auto;
+    background-color: $main-bg-color;
+}
+
+.li_header {
+    color: $text-color;
+    font-weight: bold;
+
+    @include hover-effect($main-bg-color);
+}
+
+// Main
+.h2_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2_main {
+    font-size: 40px;
+    color: $text-color;
+    margin-left: 60px;
+}
+
+.colpal {
+    padding: 15px 30px;
+    background-color: $main-bg-color;
+}
+
+.itemcarrusel {
+    height: auto;
+}
+
+.fila_tienda {
+    text-decoration: none;
+    background-color: $bg-tres-color;
+}
+
+.to_shop {
+    height: 350px;
+    background-color: $bg-tres-color;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        border: 3px solid black;
+        border-radius: 100px;
+    }
+}
+
+.text_to_shop {
+    margin-bottom: 10px;
+}
+
+.a_to_shop {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img_main {
+    @include responsive-img(90%, 80%);
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px black;
+}
+
+.qs_main {
+    height: 100%;
+    background-image: url(img/fondo_qs.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+.title_qs {
+    font-size: 100px;
+    color: $text-color;
+    margin-bottom: 20px;
+}
+
+.p_qs {
+    width: 100%;
+    text-align: center;
+    color: $text-color;
+    font-size: 20px;
+}
+
+// Footer
+.footer_row_redes {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+    height: auto;
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+.h4_footer {
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 8px yellow;
+}
+
+.img_footer {
+    @include responsive-img(50px, 50px);
+}
+
+.a_to_footer {
+    text-decoration: none;
+    color: black;
+}
+
+// Tienda oficial
+.main_to,
+.main_tienda,
+.titulo_tienda {
+    background-color: $main-bg-color;
+    height: auto;
+}
+
+.titulo_tienda_producto {
+    color: $text-color;
+    font-size: 35px;
+}
+
+.producto_tienda {
+    padding: 20px;
+    text-align: center;
+}
+
+.hover_to {
+    &:hover {
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+}
+
+.img_tienda {
+    @include responsive-img(100%, auto);
+    max-width: 400px;
+}
+
+.producto_to {
+    color: $text-color;
+}
+
+.nombre_producto {
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.precio_producto {
+    text-align: right;
+    margin-right: 65px;
+}
+
+.no_subrayado {
+    text-decoration: none;
+}
+
+// Paginas de Productos
+.productos {
+    background-color: $main-bg-color;
+    padding: 20px 10px;
+    height: auto;
+}
+
+.producto_img {
+    width: 100%;
+}
+
+.nombre_prod {
+    color: $text-color;
+    text-align: left;
+    text-shadow: 0 0 15px $header-bg-color;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.precio_prod {
+    color: $text-color;
+    text-align: left;
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.descripcion_prod {
+    text-align: left;
+    color: $text-color;
+    font-size: 20px;
+    padding-right: 75px;
+}
+
+.titulo_input_prod {
+    color: $text-color;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputs_prd {
+    margin-top: 200px;
+    width: 95%;
+}
+
+.inputs_prod {
+    height: 20px;
+    border-radius: 20px;
+}
+
+.boton_prod {
+    height: 50%;
+    width: 30%;
+    margin: 30px 0px;
+}
+
+// Media queries
+@media (max-width: 767px) {
+    .img_main {
+        width: 300px;
+    }
+
+    .nombre_prod {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 930px) {
+    .p_qs {
+        font-size: 15px;
+    }
+}
+
+

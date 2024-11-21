@@ -269,6 +269,26 @@ footer {
     .nombre_prod {
         padding-top: 25px;
     }
+
+    .title_qs{
+        font-size: 40px;
+    }
+
+    // Arreglo errores de vista celular
+
+    .h2_main {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .p_qs {
+        font-size: 15px;
+    }
+
+    .qs_main {
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 930px) {
@@ -276,5 +296,3 @@ footer {
         font-size: 15px;
     }
 }
-
-

@@ -1,8 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
-
 // Variables
 $header-bg-color: rgb(255, 248, 0);
 $main-bg-color: rgb(6, 68, 105);
@@ -16,23 +11,42 @@ $bg-color: #0f0a;
         padding: 5px;
         background-color: $bg-color;
         border-radius: $border-radius;
-        font-family: sans-serif;
-        font-weight: bolder;
     }
 }
-
 @mixin responsive-img($width: 100%, $height: auto) {
     width: $width;
     height: $height;
 }
 
+
+
 // Header
+header {
+    overflow: visible;
+}
+
 .navcss {
-    background-color: $header-bg-color;
+    width: 100%;
+    position: fixed !important;
+    top: 0px  !important;
+    z-index: 1000  !important;
+    background-color: $header-bg-color  !important;
 }
 
 .imgheader {
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    animation: giro3D 2s infinite linear;
+    transform-origin: center;
+}
+
+@keyframes giro3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 .maincol {
@@ -41,13 +55,21 @@ $bg-color: #0f0a;
 }
 
 .li_header {
+    border-radius: 50px;
     color: $text-color;
     font-weight: bold;
+    transition:  padding 0.2s linear, background-color 0.1s linear, border-radius 0.1s ease;
 
     @include hover-effect($main-bg-color);
 }
 
 // Main
+main {
+    margin-top: 75px;
+}
+
+
+
 .h2_container {
     display: flex;
     justify-content: center;
@@ -55,9 +77,9 @@ $bg-color: #0f0a;
 }
 
 .h2_main {
+    text-align: center;
     font-size: 40px;
     color: $text-color;
-    margin-left: 60px;
 }
 
 .colpal {
@@ -79,10 +101,11 @@ $bg-color: #0f0a;
     background-color: $bg-tres-color;
     text-align: center;
     text-decoration: none;
+    transition: border 0.2s linear, border-radius 0.4s linear;
 
     &:hover {
         border: 3px solid black;
-        border-radius: 100px;
+        border-radius: 110px;
     }
 }
 
@@ -162,6 +185,7 @@ footer {
 }
 
 .titulo_tienda_producto {
+    text-align: center;
     color: $text-color;
     font-size: 35px;
 }
@@ -172,8 +196,10 @@ footer {
 }
 
 .hover_to {
+    transition: border 0.2s ease, border-radius 0.5s ease;
+
     &:hover {
-        border: 1px solid black;
+        border: 3px solid $header-bg-color;
         border-radius: 20px;
     }
 }

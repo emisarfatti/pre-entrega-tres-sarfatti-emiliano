@@ -53,6 +53,7 @@ main {
 }
 
 .h2_main {
+  margin-top: 40px;
   text-align: center;
   font-size: 40px;
   color: rgb(232, 232, 232);
@@ -159,6 +160,10 @@ footer {
   height: auto;
 }
 
+.main_to {
+  margin-top: 85px;
+}
+
 .titulo_tienda_producto {
   text-align: center;
   color: rgb(232, 232, 232);
@@ -201,6 +206,10 @@ footer {
 
 .no_subrayado {
   text-decoration: none;
+}
+
+.main_prod {
+  margin-top: 75px;
 }
 
 .productos {
@@ -261,6 +270,9 @@ footer {
 }
 
 @media (max-width: 767px) {
+  main {
+    margin-top: 85px;
+  }
   .img_main {
     width: 300px;
   }
